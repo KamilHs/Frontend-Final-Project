@@ -1,0 +1,45 @@
+@media (max-width: $breakpoint-medium) {
+  .nav-buttons {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    display: block;
+    & a {
+      padding: 10px 22px;
+    }
+  }
+
+  .main-menu {
+    z-index: 10000000;
+    width: 100%;
+    background-color: white;
+    opacity: 1;
+    transform: translateY(0px);
+    position: fixed;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .menu-toggler {
+    display: inline;
+  }
+
+  .dropdown {
+    position: relative;
+    transform: none;
+    transition: none;
+    display: none;
+  }
+
+  .has-children:hover > .dropdown {
+    pointer-events: all;
+    display: inline;
+  }
+
+  .menu-trigger {
+    display: inline-block;
+  }
+}
