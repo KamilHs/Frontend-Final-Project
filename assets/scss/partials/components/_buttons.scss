@@ -1,28 +1,37 @@
 .button {
-  padding: 6px 30px;
   border-radius: 5px;
-  outline: none;
-  align-self: center;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
   transition: all 0.3s ease;
-  &-white {
-    color: $primary-color;
-    background: none;
-    border: 1px solid $primary-color;
-    &:hover {
+  &-nav {
+    padding: 6px 30px;
+    &-white {
+      color: $primary-color;
+      background: none;
+      border: 1px solid $primary-color;
+      &:hover {
+        color: white;
+        background: $primary-color;
+      }
+    }
+    &-primary {
       color: white;
       background: $primary-color;
+      &:hover {
+        color: $primary-color;
+        background: white;
+        border: 1px solid $primary-color;
+      }
     }
   }
   &-primary {
+    padding: 14px 40px;
     color: white;
     background: $primary-color;
     &:hover {
-      color: $primary-color;
-      background: white;
-      border: 1px solid $primary-color;
+      color: white;
+      background: $primary-button-hover;
     }
   }
 }
