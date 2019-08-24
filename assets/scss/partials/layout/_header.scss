@@ -93,3 +93,25 @@
     }
   }
 }
+
+.play-btn-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  & a {
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid white;
+    display: inline-block;
+    position: relative;
+    & i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}

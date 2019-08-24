@@ -1,0 +1,22 @@
+.features {
+  padding-top: 100px;
+  background: #f7fafd;
+  & .heading {
+    & .section-title {
+      font-size: 28px;
+      color: $secondary-color;
+      letter-spacing: 1.75px;
+      height: 45px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+  }
+  & .text {
+    p {
+      color: $nav-link;
+      line-height: 28px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+  }
+}
