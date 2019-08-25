@@ -3,13 +3,49 @@
     display: none;
   }
 
+  .nav-bar {
+    padding: 0;
+  }
+
   .menu {
+    margin: 0;
     position: absolute;
     top: 100%;
+    left: 0;
     background-color: white;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
     display: block;
-    & a {
-      padding: 10px 22px;
+    transition: all 0.3s ease;
+    &.active {
+      transform: scale(1);
+    }
+    & li {
+      padding: 0;
+      & a {
+        display: block;
+        padding: 10px 0;
+        height: 50px;
+      }
+      &.has-children {
+        & a {
+          width: 100%;
+          & i {
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        & .dropdown {
+          top: 0;
+          & a {
+            font-weight: 600;
+            padding-left: 50px !important;
+            color: $secondary-color !important;
+          }
+        }
+      }
     }
   }
 
@@ -21,6 +57,10 @@
     transform: translateY(0px);
     position: fixed;
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+    & .row {
+      height: 80px;
+      box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+    }
   }
 
   .menu-toggler {
