@@ -1,4 +1,5 @@
 $(document).ready(() => {
+    let alreadydone = false
     checkViewPort()
     $(document).scroll(e => {
         e.preventDefault();
@@ -9,9 +10,12 @@ $(document).ready(() => {
         const viewTop = $(document).scrollTop();
         const viewBottom = viewTop + $(window).height();
         const sectionTop = $('.parallax-counter').offset().top;
-        const sectionBottom = sectionTop + $('.parallax-counter').height();
-        if (viewTop < sectionTop && viewBottom > sectionBottom) {
-            count();
+        const sectionMidlle = sectionTop + $('.parallax-counter').height() / 2;
+        if (viewTop < sectionTop && viewBottom > sectionMidlle) {
+            if (!alreadydone) {
+                count();
+                alreadydone = true;
+            }
         }
     }
 
@@ -23,7 +27,7 @@ $(document).ready(() => {
 
         for (let i = 0; i < highBounds.length; i++) {
             intervals[i] = (countingDuration / highBounds[i]);
-        }        
+        }
 
         $(counters).each((index, counter) => {
             let localCounter = 1;
@@ -31,7 +35,7 @@ $(document).ready(() => {
                 if ($(counter).text() >= highBounds[index]) {
                     clearInterval(interval);
                 }
-                else{
+                else {
                     $(counter).text(localCounter++);
                 }
             }, intervals[index])
