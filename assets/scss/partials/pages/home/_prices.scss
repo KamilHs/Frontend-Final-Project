@@ -1,0 +1,92 @@
+.prices {
+  background-color: #f7fafd;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  & .pricing-item {
+    background: white;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    &.active{
+        & .pricing-header{
+            background-color: $primary-color;
+            & .pricing-title{
+                color: white;
+            }
+        }
+    }
+    & .pricing-header {
+      border-bottom: 1px solid #f7fafd;
+      text-align: center;
+      height: 130px;
+      display: block;
+      position: relative;
+      & h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: $secondary-color;
+        position: absolute;
+        width: 100%;
+        top: 46%;
+      }
+    }
+    & .pricing-body {
+      margin-bottom: 40px;
+      text-align: center;
+      & .number {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        background: #f7fafd;
+        position: relative;
+        text-align: center;
+        border-radius: 100%;
+        left: 50%;
+        top: -21px;
+        transform: translateX(-50%);
+      }
+      & .price-wrapper {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        & * {
+          color: $primary-color;
+        }
+        & .currency {
+          font-weight: 600;
+          height: 47px;
+          font-size: 20px;
+          position: relative;
+          top: -15px;
+        }
+        & .price {
+          font-size: 34px;
+          letter-spacing: 2.12px;
+        }
+        .period {
+          font-size: 14px;
+          letter-spacing: 0.88px;
+        }
+        & .price,
+        .period {
+          font-weight: 700;
+        }
+      }
+      & .list {
+        & .active {
+          color: $secondary-color;
+          text-decoration: none;
+        }
+        & li{
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #CCDCEA;
+            letter-spacing: 0.88px;
+            text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

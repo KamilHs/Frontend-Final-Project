@@ -1,4 +1,5 @@
 .button {
+  cursor: pointer;
   border-radius: 5px;
   font-weight: 700;
   text-transform: uppercase;
@@ -33,6 +34,11 @@
       color: white;
       background: $primary-button-hover;
     }
+  }
+  &-white {
+    padding: 14px 40px;
+    color: $primary-color;
+    background: white;
   }
 }
 
@@ -91,7 +97,8 @@
   }
 }
 
-.services-list {
+.services-list,
+.design-development-list {
   & .list-item-button {
     & {
     }

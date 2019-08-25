@@ -1,0 +1,91 @@
+.our-team {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  .team-item {
+    background: #fff;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 55px;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 68px;
+      z-index: 1;
+      background-color: $primary-color;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      &::before {
+        height: 125px;
+      }
+      & .social li a {
+        color: white;
+      }
+      & .user-image {
+        bottom: -55px;
+      }
+    }
+    & .team-info {
+      margin-top: 0px;
+      margin-bottom: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      & > * {
+        display: block;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
+      & .user-name {
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 0.69px;
+        margin-top: 5px;
+      }
+      & span {
+        font-size: 12px;
+        color: #e5e9f7;
+        letter-spacing: 0.6px;
+      }
+    }
+    & .social {
+      position: relative;
+      z-index: 2;
+      & li {
+        margin: 0 10px;
+        & a {
+          transition: all 0.3s ease;
+          color: $primary-color;
+        }
+      }
+    }
+    & > p {
+      display: inline-block;
+      padding-left: 25px;
+      padding-right: 25px;
+      text-align: center;
+      font-size: 14px;
+      color: $nav-link;
+      letter-spacing: 0.6px;
+      line-height: 26px;
+      margin-bottom: 60px;
+    }
+  }
+  & .user-image {
+    width: 96px;
+    height: 96px;
+    border: 6px solid #fff;
+    overflow: hidden;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -45px;
+    transition: all 0.4s ease;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  }
+}

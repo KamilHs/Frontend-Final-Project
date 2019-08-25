@@ -1,7 +1,7 @@
-.features {
+.design-development {
   padding-top: 100px;
   padding-bottom: 80px;
-  background: #f7fafd;
+  background: white;
   & .heading {
     & .section-title {
       font-size: 28px;
@@ -22,12 +22,11 @@
   }
   & div.image {
     transition: all 0.6s ease 0.6s;
-    right: 3%;
+    left: -3%;
     opacity: 0;
   }
-}
-
-.reveal-right {
-  opacity: 1 !important ;
-  right: 0 !important ;
+  .reveal-right {
+    left: 0 !important;
+    opacity: 1;
+  }
 }
