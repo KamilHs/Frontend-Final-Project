@@ -3,18 +3,22 @@
   padding-top: 100px;
   padding-bottom: 80px;
   & .pricing-item {
+    transition: all 0.5s ease;
     background: white;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 30px;
-    &.active{
-        & .pricing-header{
-            background-color: $primary-color;
-            & .pricing-title{
-                color: white;
-            }
+    position: relative;
+    top: 10%;
+    opacity: 0;
+    &.active {
+      & .pricing-header {
+        background-color: $primary-color;
+        & .pricing-title {
+          color: white;
         }
+      }
     }
     & .pricing-header {
       border-bottom: 1px solid #f7fafd;
@@ -79,14 +83,19 @@
           color: $secondary-color;
           text-decoration: none;
         }
-        & li{
-            margin-bottom: 12px;
-            font-size: 14px;
-            color: #CCDCEA;
-            letter-spacing: 0.88px;
-            text-decoration: line-through;
+        & li {
+          margin-bottom: 12px;
+          font-size: 14px;
+          color: #ccdcea;
+          letter-spacing: 0.88px;
+          text-decoration: line-through;
         }
       }
     }
   }
+}
+
+.revealed {
+  opacity: 1 !important;
+  top: 0% !important;
 }

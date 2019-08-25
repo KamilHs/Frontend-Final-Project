@@ -8,11 +8,17 @@
       position: relative;
       overflow: hidden;
       height: 200px;
-      & .img-1 {
+      & .blg-img-1,
+      & .blg-img-2,
+      & .blg-img-3 {
         position: relative;
-        left: -79%;
-        top: -165%;
+        left: -78%;
+        top: -168%;
         transform: scale(0.4);
+      }
+      & .blg-img-2,
+      & .blg-img-3 {
+        top: -100%;
       }
     }
     .blog-content {

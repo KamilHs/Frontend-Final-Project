@@ -42,4 +42,28 @@
   .menu-trigger {
     display: inline-block;
   }
+
+  .oval {
+    display: none;
+  }
+
+  .header-text {
+    text-align: center;
+    & .button {
+      display: inline-block;
+      margin-bottom: 50px;
+    }
+  }
+  .home-img-group {
+    justify-content: center !important;
+    & .flex-column {
+      margin: 0 10px;
+    }
+  }
+  .features img,
+  .design-development img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

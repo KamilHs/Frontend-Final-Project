@@ -1,0 +1,74 @@
+footer {
+  padding-top: 70px;
+  background: $primary-color;
+  & .logo,
+  & h5 {
+    margin-bottom: 30px;
+  }
+  .text {
+    font-size: 14px;
+    color: white;
+    line-height: 26px;
+    letter-spacing: 0.88px;
+  }
+
+  h5 {
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.69px;
+    line-height: 30px;
+    margin-bottom: 30px !important;
+  }
+  ul {
+    margin: 0;
+    & li {
+      &:hover {
+        & a {
+          color: $footer-primary-color;
+          & span {
+            margin-left: 10px;
+          }
+        }
+      }
+      & a {
+        display: block;
+        padding: 6px 0;
+        width: 100%;
+        height: 100%;
+        color: $footer-primary-color;
+        & i {
+          margin-right: 12px;
+          font-size: 14px;
+        }
+        & span {
+          transition: all 0.3s ease;
+          margin-left: 0;
+          font-size: 14px;
+          color: $footer-primary-color;
+        }
+      }
+    }
+  }
+  .address {
+    & a,
+    & p {
+      color: $footer-primary-color;
+    }
+    & p {
+      margin-bottom: 5px;
+    }
+  }
+  .social {
+    display: flex;
+  }
+  .copyright {
+    text-align: center;
+    border-top: 1px solid #777bff;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: $footer-primary-color;
+    letter-spacing: 0.88px;
+  }
+}

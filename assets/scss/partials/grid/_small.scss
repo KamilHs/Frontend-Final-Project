@@ -1,2 +1,8 @@
 @media (max-width: $breakpoint-small) {
+  .blog-img {
+    & img {
+      transform: scale(0.6) !important;
+      left: -36% !important;
+    }
+  }
 }
