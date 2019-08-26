@@ -106,4 +106,9 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .pre-features-about {
+    & .center-text p {
+      margin-top: 40px;
+    }
+  }
 }

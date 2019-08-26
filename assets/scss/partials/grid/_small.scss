@@ -5,4 +5,9 @@
       left: -36% !important;
     }
   }
+  .pre-features-about {
+    & .center-text p {
+      margin-top: 80px;
+    }
+  }
 }
