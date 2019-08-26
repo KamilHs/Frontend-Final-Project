@@ -1448,6 +1448,9 @@ footer .copyright {
     position: relative !important;
     width: 100% !important;
   }
+  .design-development .image {
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 767px) {
