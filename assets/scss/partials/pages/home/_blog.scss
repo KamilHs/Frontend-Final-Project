@@ -8,17 +8,19 @@
       position: relative;
       overflow: hidden;
       height: 200px;
-      & .blg-img-1,
-      & .blg-img-2,
-      & .blg-img-3 {
-        position: relative;
-        left: -78%;
-        top: -168%;
-        transform: scale(0.4);
+      &.img-1 {
+        background-image: url("../images/blog-1.jpg");
       }
-      & .blg-img-2,
-      & .blg-img-3 {
-        top: -100%;
+      &.img-2 {
+        background-image: url("../images/blog-2.jpg");
+      }
+      &.img-3 {
+        background-image: url("../images/blog-3.jpg");
+      }
+      &.img-1,
+      &.img-2,
+      &.img-3 {
+        background-size: 100%;
       }
     }
     .blog-content {
