@@ -111,4 +111,21 @@
       margin-top: 40px;
     }
   }
+  .our-mission,
+  .our-vision {
+    & .about {
+      & .about-img {
+        width: 100% !important;
+        height: 300px;
+        margin-bottom: 30px;
+        & img {
+          max-width: 100%;
+        }
+      }
+      & .about-text {
+        position: relative !important;
+        width: 100% !important;
+      }
+    }
+  }
 }

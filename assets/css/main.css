@@ -1433,6 +1433,21 @@ footer .copyright {
   .pre-features-about .center-text p {
     margin-top: 40px;
   }
+  .our-mission .about .about-img,
+  .our-vision .about .about-img {
+    width: 100% !important;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .our-mission .about .about-img img,
+  .our-vision .about .about-img img {
+    max-width: 100%;
+  }
+  .our-mission .about .about-text,
+  .our-vision .about .about-text {
+    position: relative !important;
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 767px) {
