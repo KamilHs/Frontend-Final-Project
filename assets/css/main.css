@@ -313,7 +313,7 @@ footer .copyright {
 }
 
 .img-1, .img-2 {
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .img-1, .img-4 {
@@ -1176,19 +1176,19 @@ footer .copyright {
   height: 200px;
 }
 
-.blog .blog-post .blog-img.img-1 {
+.blog .blog-post .blog-img.blg-img-1 {
   background-image: url("../images/blog-1.jpg");
 }
 
-.blog .blog-post .blog-img.img-2 {
+.blog .blog-post .blog-img.blg-img-2 {
   background-image: url("../images/blog-2.jpg");
 }
 
-.blog .blog-post .blog-img.img-3 {
+.blog .blog-post .blog-img.blg-img-3 {
   background-image: url("../images/blog-3.jpg");
 }
 
-.blog .blog-post .blog-img.img-1, .blog .blog-post .blog-img.img-2, .blog .blog-post .blog-img.img-3 {
+.blog .blog-post .blog-img.blg-img-1, .blog .blog-post .blog-img.blg-img-2, .blog .blog-post .blog-img.blg-img-3 {
   background-size: 100%;
 }
 
@@ -1422,7 +1422,11 @@ footer .copyright {
             justify-content: center !important;
   }
   .home-img-group .flex-column {
-    margin: 0 10px;
+    margin: 0 2px;
+  }
+  .home-img-group .flex-column .img-1,
+  .home-img-group .flex-column .img-2 {
+    margin-bottom: 4%;
   }
   .features img,
   .design-development img {

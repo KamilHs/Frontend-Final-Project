@@ -97,7 +97,11 @@
   .home-img-group {
     justify-content: center !important;
     & .flex-column {
-      margin: 0 10px;
+      margin: 0 2px;
+      & .img-1,
+      & .img-2 {
+        margin-bottom: 4%;
+      }
     }
   }
   .features img,
