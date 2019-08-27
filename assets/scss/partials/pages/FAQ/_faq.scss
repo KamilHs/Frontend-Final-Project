@@ -1,0 +1,58 @@
+.questions {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  letter-spacing: 0.88px;
+  line-height: 28px;
+  & h2 {
+    font-size: 30px;
+    color: $primary-color;
+    letter-spacing: 1.88px;
+    margin-bottom: 20px;
+  }
+  & p {
+    margin-bottom: 28px;
+    color: $secondary-color;
+  }
+  & .accordion {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 48px 0px;
+    margin-bottom: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+  }
+  & .question-card-header {
+    transition: all 0.3s ease;
+    & h5 {
+      width: 100%;
+      padding: 20px 30px;
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: $secondary-color;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    &:hover {
+      padding-left: 10px;
+      background: #f7fafd;
+      & + .question-card-body {
+      }
+    }
+  }
+  & .question-card-body {
+    transition: height 0.35s ease;
+    transform-origin: top;
+    overflow: hidden;
+    & .padding {
+      padding: 30px 30px 16px 35px;
+      border-top: 1px solid rgb(243, 248, 255);
+    }
+    & p {
+      color: $nav-link;
+      margin-bottom: 14px;
+      font-size: 14px;
+      letter-spacing: 0.88px;
+      line-height: 28px;
+    }
+  }
+}

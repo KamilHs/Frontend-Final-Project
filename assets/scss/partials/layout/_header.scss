@@ -130,8 +130,9 @@
   overflow: hidden;
   display: inline-block;
   background-attachment: fixed;
+  background-size: 100%;
   background-image: url("../images/parallax-cover.jpg");
-  background-position: 2% 62%;
+  background-position: 0% 150%;
   &::before {
     content: "";
     position: absolute;

@@ -410,8 +410,9 @@ footer .copyright {
   overflow: hidden;
   display: inline-block;
   background-attachment: fixed;
+  background-size: 100%;
   background-image: url("../images/parallax-cover.jpg");
-  background-position: 2% 62%;
+  background-position: 0% 150%;
 }
 
 .sub-page-header::before {
@@ -1321,6 +1322,89 @@ footer .copyright {
           transform: translateX(-100%);
 }
 
+.questions {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  letter-spacing: 0.88px;
+  line-height: 28px;
+}
+
+.questions h2 {
+  font-size: 30px;
+  color: #585ce9;
+  letter-spacing: 1.88px;
+  margin-bottom: 20px;
+}
+
+.questions p {
+  margin-bottom: 28px;
+  color: #3b566e;
+}
+
+.questions .accordion {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 48px 0px;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 48px 0px;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 4px;
+}
+
+.questions .question-card-header {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.questions .question-card-header h5 {
+  width: 100%;
+  padding: 20px 30px;
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #3b566e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.questions .question-card-header:hover {
+  padding-left: 10px;
+  background: #f7fafd;
+}
+
+.questions .question-card-body {
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  overflow: hidden;
+}
+
+.questions .question-card-body .padding {
+  padding: 30px 30px 16px 35px;
+  border-top: 1px solid #f3f8ff;
+}
+
+.questions .question-card-body p {
+  color: #6f8ba4;
+  margin-bottom: 14px;
+  font-size: 14px;
+  letter-spacing: 0.88px;
+  line-height: 28px;
+}
+
+@media (min-width: 1201px) {
+  .sub-page-header {
+    background-size: 100%;
+    background-position: 0%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sub-page-header {
+    background-position: 0% 150%;
+  }
+}
+
 @media (max-width: 991px) {
   .nav-buttons {
     display: none;
@@ -1456,6 +1540,10 @@ footer .copyright {
   .design-development .image {
     margin-bottom: 60px;
   }
+  .sub-page-header {
+    background-size: 100%;
+    background-position: 0%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1466,6 +1554,13 @@ footer .copyright {
   }
   .pre-features-about .center-text p {
     margin-top: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sub-page-header {
+    background-size: 100%;
+    background-position: 0%;
   }
 }
 /*# sourceMappingURL=main.css.map */
