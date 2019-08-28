@@ -1117,6 +1117,15 @@ footer .copyright {
   text-decoration: line-through;
 }
 
+.prices .pricing-item .pricing-footer {
+  text-align: center;
+}
+
+.prices .pricing-item .pricing-footer a {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
 .revealed {
   opacity: 1 !important;
   top: 0% !important;

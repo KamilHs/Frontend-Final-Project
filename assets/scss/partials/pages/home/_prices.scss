@@ -92,6 +92,13 @@
         }
       }
     }
+    .pricing-footer {
+      text-align: center;
+      & a {
+        display: inline-block;
+        margin-bottom: 40px;
+      }
+    }
   }
 }
 
