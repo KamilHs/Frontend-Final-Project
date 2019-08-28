@@ -548,6 +548,7 @@ footer .copyright {
 }
 
 .sub-page-header .node a.clickable {
+  margin-left: 25px;
   position: relative;
 }
 
@@ -1317,9 +1318,6 @@ footer .copyright {
 
 .blog .blog-post .blog-content .button {
   position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   width: 55%;
 }
 
