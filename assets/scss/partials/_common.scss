@@ -5,8 +5,8 @@
   font-family: "Nunito", sans-serif;
 }
 
-body {
-  // height: 1000vh;
+.main-menu {
+  z-index: 1000000000;
 }
 
 a {
@@ -20,7 +20,7 @@ ul {
   list-style: none;
 }
 
-.parallax{
+.parallax {
   position: fixed;
   z-index: -1000;
 }

@@ -20,6 +20,54 @@
       color: #697ba2;
     }
   }
+  .img {
+    &-1 {
+      background-image: url("../images/1.jpg");
+    }
+    &-2 {
+      background-image: url("../images/2.jpg");
+    }
+    &-3 {
+      background-image: url("../images/3.jpg");
+    }
+    &-4 {
+      background-image: url("../images/1.jpg");
+    }
+    &-1,
+    &-2 {
+      margin-bottom: 1%;
+    }
+    &-1,
+    &-4 {
+      width: 99%;
+      height: 332px;
+      background-size: 500px 340px;
+      background-position: center;
+      &:hover {
+        background-size: 540px 380px;
+      }
+    }
+    &-2,
+    &-3 {
+      width: 99%;
+      height: 201px;
+      background-size: 400px 290px;
+      background-position: 10% 68%;
+      &:hover {
+        background-size: 440px 330px;
+      }
+    }
+    &-4:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(88, 92, 233);
+      opacity: 0.8;
+    }
+  }
 }
 
 .home-img {
@@ -27,55 +75,6 @@
   position: relative;
   overflow: hidden;
   border-radius: 5px;
-}
-
-.img {
-  &-1 {
-    background-image: url("../images/1.jpg");
-  }
-  &-2 {
-    background-image: url("../images/2.jpg");
-  }
-  &-3 {
-    background-image: url("../images/3.jpg");
-  }
-  &-4 {
-    background-image: url("../images/1.jpg");
-  }
-  &-1,
-  &-2 {
-    margin-bottom: 1%;
-  }
-  &-1,
-  &-4 {
-    width: 99%;
-    height: 332px;
-    background-size: 500px 340px;
-    background-position: center;
-    &:hover {
-      background-size: 540px 380px;
-    }
-  }
-  &-2,
-  &-3 {
-    width: 99%;
-    height: 201px;
-    background-size: 400px 290px;
-    background-position: 10% 68%;
-    &:hover {
-      background-size: 440px 330px;
-    }
-  }
-  &-4:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(88, 92, 233);
-    opacity: 0.8;
-  }
 }
 
 .content {
