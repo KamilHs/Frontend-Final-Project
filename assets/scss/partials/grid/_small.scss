@@ -10,4 +10,11 @@
       margin-top: 80px;
     }
   }
+  .sub-page-header {
+    & h1 {
+      font-size: 16px !important;
+      line-height: 26px !important;
+      padding-bottom: 15px;
+    }
+  }
 }

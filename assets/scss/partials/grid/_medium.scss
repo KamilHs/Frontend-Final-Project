@@ -140,5 +140,10 @@
   .sub-page-header {
     background-size: 100%;
     background-position: 0%;
+    & h1 {
+      font-size: 26px !important;
+      line-height: 36px !important;
+      padding-bottom: 15px;
+    }
   }
 }
