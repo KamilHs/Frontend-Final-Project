@@ -20,7 +20,7 @@
     border-radius: 4px;
   }
   & .question-card-header {
-    transition: all 0.3s ease;
+    transition: $main-transition;
     & h5 {
       width: 100%;
       padding: 20px 30px;
@@ -28,7 +28,7 @@
       font-size: 15px;
       letter-spacing: 1px;
       color: $secondary-color;
-      transition: all 0.3s ease;
+      transition: $main-transition;
       cursor: pointer;
     }
 

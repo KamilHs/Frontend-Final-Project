@@ -35,7 +35,7 @@
     letter-spacing: 1.72px;
     margin-top: 70px;
     margin-bottom: 15px;
-    transition: all 0.3s ease;
+    transition: $main-transition;
     &::before {
       position: absolute;
       content: "";

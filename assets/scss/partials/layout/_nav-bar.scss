@@ -1,7 +1,7 @@
 .main-menu {
   position: fixed;
   height: 80px;
-  transition: all 0.3s ease;
+  transition: $main-transition;
   &.menu-transform {
     z-index: 10000000;
     width: 100%;
@@ -55,7 +55,7 @@
   transform: translateY(-32px);
   & > li {
     position: relative;
-    transition: all 0.3s ease;
+    transition: $main-transition;
     &:hover {
       background-color: #f5f5f5;
       & > a {
@@ -74,12 +74,12 @@
       font-weight: 600;
       font-size: 13px;
       line-height: 40px;
-      transition: all 0.3s ease;
+      transition: $main-transition;
       border-bottom: 1px solid #f5f5f5;
       &:before {
         content: "";
         position: absolute;
-        transition: all 0.3s ease;
+        transition: $main-transition;
         left: 0;
         height: 100%;
         width: 0;
@@ -105,7 +105,7 @@
     height: 2px;
     background: $secondary-color;
     display: inline-block;
-    transition: all 0.3s ease;
+    transition: $main-transition;
     opacity: 1;
   }
   &:before,
@@ -113,7 +113,7 @@
     transform-origin: 50% 50%;
     transform: translate(0);
     background: $secondary-color;
-    transition: all 0.3s ease;
+    transition: $main-transition;
     content: "";
     position: absolute;
     width: 75%;

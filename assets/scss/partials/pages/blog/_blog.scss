@@ -1,6 +1,7 @@
 section.page {
   background: #f7fafd;
-  & section.blogs {
+  & .blogs,
+  & .single-blog {
     padding-top: 100px;
     padding-bottom: 70px;
     letter-spacing: 0.88px;
@@ -108,93 +109,6 @@ section.page {
         padding: 8px 40px !important;
         display: inline-block;
         margin-bottom: 30px;
-      }
-    }
-    & .search-widget {
-      display: block;
-      margin-bottom: 30px;
-      height: 50px;
-      position: relative;
-      form {
-        & > * {
-          position: absolute;
-        }
-        & input {
-          width: 100%;
-          height: 100%;
-          outline: none;
-          border: 1px solid white;
-          padding-left: 20px;
-          padding-right: 50px;
-          transition: all 0.3s ease;
-          background: white;
-          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
-          &:focus {
-            border: 1px solid $primary-color;
-            padding-left: 30px;
-          }
-        }
-        & .submit {
-          outline: none;
-          border: none;
-          border-radius: 5px;
-          padding: 4px 10px;
-          background-color: $primary-color;
-          z-index: 2;
-          right: 7px;
-          top: 7px;
-          & i {
-            color: white;
-          }
-        }
-      }
-      & + ul {
-        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 48px 0px;
-        margin-bottom: 30px;
-        background: white;
-        overflow: hidden;
-        border-radius: 5px;
-        & li {
-          &:hover {
-            & a {
-              padding-left: 70px;
-            }
-          }
-          & a {
-            position: relative;
-            display: block;
-            height: 50px;
-            line-height: 50px;
-            padding-left: 60px;
-            font-size: 14px;
-            color: $secondary-color;
-            letter-spacing: 0.88px;
-            border-bottom: 1px solid rgb(236, 247, 255);
-            transition: all 0.3s ease 0s;
-            &::before {
-              content: "\f054";
-              position: absolute;
-              font-family: "Font Awesome 5 Free";
-              font-weight: 900;
-              font-size: 10px;
-              left: 30px;
-              color: $secondary-color;
-            }
-            & span {
-              position: absolute;
-              right: 5%;
-              top: 50%;
-              transform: translateY(-50%);
-              height: 20px;
-              line-height: 20px;
-              padding: 0 10px;
-              font-size: 10px;
-              color: white;
-              border-radius: 100px;
-              background: $primary-color;
-            }
-          }
-        }
       }
     }
   }

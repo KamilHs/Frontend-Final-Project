@@ -4,7 +4,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
-  transition: all 0.3s ease;
+  transition: $main-transition;
   &-nav {
     padding: 6px 30px;
     &-white {
@@ -63,7 +63,7 @@
     top: 50%;
     transform: translateY(-50%);
     color: $secondary-color;
-    transition: all 0.3s ease;
+    transition: $main-transition;
   }
   & i {
     left: 8%;
@@ -79,7 +79,7 @@
     top: 0%;
     background: #f7fafd;
     transform: rotate(60deg);
-    transition: all 0.3s ease;
+    transition: $main-transition;
     left: -28%;
   }
   &.active {

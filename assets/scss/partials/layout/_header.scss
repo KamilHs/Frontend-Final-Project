@@ -174,7 +174,7 @@
       color: white;
       line-height: 30px;
       &.clickable {
-        margin-left: 25px;
+        margin-right: 25px;
         position: relative;
         &::before {
           pointer-events: none;
@@ -190,7 +190,6 @@
       }
       &.active {
         color: #e5e9f7;
-        margin-left: 20px;
       }
     }
   }

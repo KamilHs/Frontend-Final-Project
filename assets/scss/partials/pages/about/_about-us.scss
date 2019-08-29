@@ -18,7 +18,7 @@
       overflow: hidden;
       & img {
         transform: scale(1);
-        transition: all 0.3s ease;
+        transition: $main-transition;
       }
       &:hover {
         & img {

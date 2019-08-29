@@ -16,7 +16,7 @@
       height: 68px;
       z-index: 1;
       background-color: $primary-color;
-      transition: all 0.3s ease;
+      transition: $main-transition;
     }
     &:hover {
       &::before {
@@ -58,7 +58,7 @@
       & li {
         margin: 0 10px;
         & a {
-          transition: all 0.3s ease;
+          transition: $main-transition;
           color: $primary-color;
         }
       }
