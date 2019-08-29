@@ -2404,6 +2404,99 @@ section.page .single-blog .blog-post .button {
   letter-spacing: 0.88;
 }
 
+.page .page-bottom {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  letter-spacing: 0.88px;
+  line-height: 28px;
+  color: #6f8ba4;
+}
+
+.page .page-bottom .page-detail > p {
+  margin-bottom: 28px;
+}
+
+.page .page-bottom .page-detail img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.page .page-bottom .page-detail .page-gallery .image {
+  overflow: hidden;
+  height: 185px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.page .page-bottom .page-detail .page-gallery .image:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.page .page-bottom .page-detail .page-gallery .image a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.page .page-bottom .sidebar ul {
+  background: white;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.page .page-bottom .sidebar ul li {
+  position: relative;
+}
+
+.page .page-bottom .sidebar ul li.active {
+  background: #585ce9;
+}
+
+.page .page-bottom .sidebar ul li.active * {
+  color: white;
+}
+
+.page .page-bottom .sidebar ul li i {
+  padding-left: 28px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 8px;
+  color: #3b566e;
+}
+
+.page .page-bottom .sidebar ul li a {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #ecf7ff;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 60px;
+  font-size: 14px;
+  color: #3b566e;
+  letter-spacing: 0.88px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.page .page-bottom .sidebar ul li:hover a {
+  padding-left: 70px;
+}
+
+.page .page-bottom .sidebar ul li:hover.active a {
+  padding-left: 62px;
+}
+
 @media (min-width: 1201px) {
   .sub-page-header {
     background-position: 0% 150%;
