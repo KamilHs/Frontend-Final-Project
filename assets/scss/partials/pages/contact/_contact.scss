@@ -1,0 +1,106 @@
+.page {
+  .map-section {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    letter-spacing: 0.88px;
+    line-height: 28px;
+    color: $nav-link;
+    & .map-wrapper {
+      height: 500px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+      z-index: 1;
+    }
+    & .contact-info {
+      bottom: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(50%);
+      background-image: linear-gradient(135deg, $primary-color 0%, #5c83e3 100%);
+      box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+      border-radius: 5px;
+      overflow: hidden;
+      width: 88%;
+      padding: 30px;
+      padding-bottom: 10px;
+      & .item {
+        display: flex;
+        color: white;
+        position: relative;
+        z-index: 3;
+        & i {
+          font-size: 16px;
+          width: 20px;
+          margin-right: 10px;
+          margin-top: 5px;
+        }
+        & a {
+          color: white;
+        }
+      }
+    }
+    & ul {
+      margin: 30px 0 20px;
+      display: flex;
+      justify-content: center;
+      & li {
+        font-size: 22px;
+        margin: 0 7px;
+        & a {
+          color: white;
+        }
+      }
+    }
+  }
+  .contact-bottom {
+    border-top: 1px solid #f5f5f5;
+    margin-top: 120px;
+    padding-top: 60px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    letter-spacing: 0.88px;
+    line-height: 28px;
+    color: $nav-link;
+    & h5 {
+      margin-bottom: 30px;
+    }
+    & p {
+      margin-bottom: 28px;
+      font-size: 14px;
+      letter-spacing: 0.6px;
+    }
+    .contact-form {
+      & input,
+      textarea {
+        transition: $main-transition;
+        border: 1px solid #eee;
+        outline: none;
+        padding: 0 20px;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        &:focus {
+          padding: 0 30px;
+          border: 1px solid $primary-color;
+        }
+      }
+      & input {
+        height: 50px;
+      }
+      & textarea {
+        height: 150px;
+        padding: 15px 20px;
+        &:focus {
+          padding: 15px 30px;
+          border: 1px solid $primary-color;
+        }
+      }
+      button {
+        outline: none;
+        padding: 8px 60px;
+        border: none;
+      }
+    }
+  }
+}
