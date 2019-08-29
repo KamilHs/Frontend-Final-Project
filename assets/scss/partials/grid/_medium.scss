@@ -146,4 +146,14 @@
       padding-bottom: 15px;
     }
   }
+  .features-services {
+    & .services {
+      flex-direction: column;
+      & .text {
+        padding-left: 0 !important;
+        text-align: center !important;
+        width: 100% !important;
+      }
+    }
+  }
 }

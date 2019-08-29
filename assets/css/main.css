@@ -2321,6 +2321,89 @@ section.page .single-blog .blog-post .button {
   border: none;
 }
 
+.page .features-services {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  letter-spacing: 0.88px;
+  line-height: 28px;
+  color: #6f8ba4;
+}
+
+.page .features-services .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 30px;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+}
+
+.page .features-services .services:hover .icon::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.page .features-services .services .icon {
+  width: 166px;
+  height: 166px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.page .features-services .services .icon:before {
+  position: absolute;
+  content: "";
+  width: 133px;
+  height: 133px;
+  background: #f7fafd;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.page .features-services .services .icon img {
+  position: relative;
+  z-index: 3;
+}
+
+.page .features-services .services .text {
+  width: calc(100% - 166px);
+  padding-left: 30px;
+}
+
+.page .features-services .services .text h5 {
+  font-size: 18px;
+  color: #3b566e;
+  margin-bottom: 15px;
+  letter-spacing: 0.8px;
+}
+
+.page .features-services .services .text p {
+  color: #6f8ba4;
+  font-size: 14px;
+  letter-spacing: 0.88;
+}
+
 @media (min-width: 1201px) {
   .sub-page-header {
     background-position: 0% 150%;
@@ -2476,6 +2559,17 @@ section.page .single-blog .blog-post .button {
     font-size: 26px !important;
     line-height: 36px !important;
     padding-bottom: 15px;
+  }
+  .features-services .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features-services .services .text {
+    padding-left: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
   }
 }
 
