@@ -1960,10 +1960,18 @@ section.page .single-blog .blog-post .button {
 
 .single-blog .post-comment .form-item input,
 .single-blog .post-comment .form-item textarea {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   border: 1px solid #eee;
   outline: none;
   padding: 0 20px;
   width: 100%;
+  border-radius: 5px;
+}
+
+.single-blog .post-comment .form-item input:focus,
+.single-blog .post-comment .form-item textarea:focus {
+  border: 1px solid #585ce9;
 }
 
 .single-blog .post-comment .form-item input {

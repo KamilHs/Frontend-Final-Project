@@ -172,10 +172,15 @@
       }
       & input,
       textarea {
+        transition: $main-transition;
         border: 1px solid #eee;
         outline: none;
         padding: 0 20px;
         width: 100%;
+        border-radius: 5px;
+        &:focus {
+          border: 1px solid $primary-color;
+        }
       }
       & input {
         height: 50px;
