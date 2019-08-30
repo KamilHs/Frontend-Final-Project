@@ -12,7 +12,7 @@ $(document).ready(() => {
         const sectionTop = $('.parallax-counter').offset().top; // Taking a vertical distance from top of document to the object in px 
         const sectionMidlle = sectionTop + $('.parallax-counter').height() / 2; //I wanted to element start appearing when we scroll up to the their middle so I found middle of desired objects
         if (viewTop < sectionTop && viewBottom > sectionMidlle) {// Checking if object is in viewport
-            if (!alreadydone) {//if we haven't already did  these operations then we will have true from this if
+            if (!alreadyDone) {//if we haven't already did  these operations then we will have true from this if
                 count(); // Calling Function
                 alreadyDone = true; // Assigning true to alreadyDone because we are already doing our actions
             }
