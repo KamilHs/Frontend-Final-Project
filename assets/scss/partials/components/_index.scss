@@ -1,3 +1,5 @@
+//Components Are things that you can see in project in many places and their base properties are same, but some properties are changed.
+//This file imports every scss file in components folder and after it is imported to the main.scss
 @import "./buttons";
 @import "./center-heading";
 @import "./aside-tags";
