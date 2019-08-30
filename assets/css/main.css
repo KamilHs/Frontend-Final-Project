@@ -2371,8 +2371,8 @@ section.page .single-blog .blog-post .button {
 .page .features-services .services .icon:before {
   position: absolute;
   content: "";
-  width: 133px;
-  height: 133px;
+  width: 130px;
+  height: 130px;
   background: #f7fafd;
   -webkit-transform: rotate(0);
           transform: rotate(0);
