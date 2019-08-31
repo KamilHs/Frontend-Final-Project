@@ -54,7 +54,7 @@
     z-index: 10000000;
     width: 100%;
     background-color: white;
-    opacity: 1;
+    opacity: 1 !important;
     transform: translateY(0px);
     position: fixed;
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);

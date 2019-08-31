@@ -67,7 +67,7 @@
     transition: $main-transition;
   }
   & i {
-    left: 8%;
+    left: 18px;
   }
   & span {
     left: 28%;
@@ -81,15 +81,15 @@
     background: #f7fafd;
     transform: rotate(60deg);
     transition: $main-transition;
-    left: -28%;
+    left: -74px;
   }
   &.active {
     & i {
       color: white;
-      left: 9%;
+      left: 20px;
     }
     &:before {
-      left: -24%;
+      left: -60px;
       background: $primary-color;
     }
     & span {
@@ -105,12 +105,12 @@
     }
     &:hover {
       &::before {
-        left: -24%;
+        left: -60px;
         background: $primary-color;
       }
       & i {
         color: white;
-        left: 9%;
+        left: 20px;
       }
       & span {
         left: 32%;
