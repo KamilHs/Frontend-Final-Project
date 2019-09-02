@@ -1563,6 +1563,9 @@ footer .copyright {
 
 .blog .blog-post .blog-img.blg-img-1, .blog .blog-post .blog-img.blg-img-2, .blog .blog-post .blog-img.blg-img-3 {
   background-size: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 25px;
 }
 
 .blog .blog-post .blog-content {

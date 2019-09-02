@@ -21,6 +21,9 @@
       &.blg-img-2,
       &.blg-img-3 {
         background-size: 100%;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-bottom: 25px;
       }
     }
     .blog-content {
